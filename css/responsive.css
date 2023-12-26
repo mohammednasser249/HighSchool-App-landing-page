@@ -1,0 +1,111 @@
+@media (min-width:1279px) {
+    
+}
+
+@media (max-width:1279px) {
+    
+}
+
+@media (max-width:992px) {
+    
+    header{
+
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #fff;
+    }
+    .container .d-menu  {
+       display: none;
+    }    
+
+    .m-menu{
+        display: block  ;
+    }
+    
+.intro-text{
+    max-width: 100%;
+    padding: 2rem 0;
+}
+
+.main-container{
+    justify-content: center;
+    text-align: center;
+}
+
+}
+
+@media (max-width:768px) {
+    
+    .float-tr,.float-bl{
+        display: none;
+
+    }
+    .intro-imgs{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    
+.demo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,0.5fr) 3fr repeat(3,0.5fr);
+    grid-template-areas: "t1" "t2" "t3" "img" "t4" "t5" "t6";
+    gap:1rem;
+}
+.demo .move-right{
+    text-align: center;
+}
+
+.demo .move-left{
+    text-align: center;
+}
+
+.demo .descritption{
+    text-align: center;
+}
+.demo .description{
+
+    max-width: 100%;
+
+}
+
+footer .links{
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+footer .links div{
+    margin-bottom: 2rem;
+}
+}
+
+@media (max-width:480px) {
+    .main-img{
+        width: 100%;
+    }
+}
+
+.m-menu .m-navbar li{
+
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: var(--theme-text-dull);
+}
+
+.m-menu .m-navbar .btn{
+
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.m-menu .m-navbar li:hover{
+
+  cursor: pointer;
+  color: var(--theme-color);
+  background-color: #b8dfff;
+  border-radius: 5px;
+}

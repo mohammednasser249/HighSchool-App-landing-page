@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/30d08b6cd3.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>HighSchool</title>
 
     
@@ -22,6 +23,7 @@
                 <img src="./media/logo.png" alt="">
 
             </div>
+           
             <nav class="d-menu">
                     <ul>
                         <a href="">
@@ -33,11 +35,30 @@
                         <a href="">
                             <li>Testimonials</li>
                         </a>
-                        <a href="" class="btn ml-2">
+                        <a href="" class="btn ml-2 animate__animated animate__wobble">
                            Contact us
                         </a>
                     </ul>
             </nav>
+            <div class="m-menu" >
+                <div  onclick="Open()">
+                <button><i class="fa-solid fa-bars"></i></button>
+            </div>
+                <ul class="m-navbar" id="mobile-menu">
+                    <a href="">
+                        <li  class="active">Home</li>
+                    </a>
+                    <a href="">
+                        <li>Packages</li>
+                    </a>
+                    <a href="">
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="" class="m-btn">
+                       Contact us
+                    </a>
+                </ul>
+            </div>
           </div>
     </header>
 
@@ -110,11 +131,85 @@
                 </div>
             </section>
 
-    </main>
 
+            <section class="working">
+                 <div class="content">
+                    <p class="tag-line">Why High School</p>
+                    <p class="main-line">Structerd Learning</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci ut velit.</p>
+                 </div>
+
+                 <div class="demo">
+                    <img class="float-bg-2" src="./media/bg-shape-2.png" alt="">
+                        <div class="item1 move-right">
+                            <p class="title">Q/A Support</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas nihil ad. Officia, velit earum?</p>
+                        </div>
+                        <div class="item2 move-right">
+                            <p class="title">Practice Sessions</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas nihil ad. Officia, velit earum?</p>
+                        </div>
+                        <div class="item3 move-right">
+                            <p class="title">Gamified Learning</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas nihil ad. Officia, velit earum?</p>
+                        </div>
+
+                        <img class="image" src="./media/bg-4.png" alt="">
+                        <div class="item4 move-left">
+                            <p class="title">Unlimited Access</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas nihil ad. Officia, velit earum?</p>
+                        </div>
+                        <div class="item5 move-left">
+                            <p class="title">Practical Examples</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas nihil ad. Officia, velit earum?</p>
+                        </div>
+                        <div class="item6 move-left">
+                            <p class="title">Bit-Sized Lessons</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas nihil ad. Officia, velit earum?</p>
+                        </div>
+                 </div>
+            </section>
+
+    </main>
     <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L60,186.7C120,149,240,75,360,58.7C480,43,600,85,720,117.3C840,149,960,171,1080,149.3C1200,128,1320,64,1380,32L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+        <section class="links">
+                <div class="logo">
+                    <img src="./media/logo.png" alt="">
+                    <p>&copy; 2024, All Rights Resrerved</p>
+                </div>
+                <div class="qlinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>Packages</li>
+                        <li>Contanct</li>
+                    </ul>
+                </div>
+                <div class="lglinks">
+                    <h2>Legal Stuff</h2>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+
+                </div>
+                <div class="social">
+                    <h2>Social Media</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+                        <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                        <li><i class="fa-brands fa-youtube"></i> Youtube</li>
+                    </ul>
+                </div>
+        </section>
+
 
     </footer>
+
+    <script src="./js/main.js"></script>
 
     
 </body>
